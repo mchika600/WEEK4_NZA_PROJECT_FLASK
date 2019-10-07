@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="banner">
+   <h1 class="header-text">Register forour blog email list</h1>
+</div>
+<div class="container">
+    <h1>Register Here</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+    <ul>
+        {% for message in messages %}
+            <li>{{message}}</li>
+        {% endfor %}
+    </ul>
+        {% endif %}
+    {% endwith %}
+   <form action="" method="POST">
+       {{ sign_up_form.hidden_tag() }}
+   <div class="form-group">
+       <fieldset>
+           {{ sign_up_form.username.label }}
+           {{ sign_up_form.username(class="form-control")}}
+       </fieldset>
+       <fieldset>
+            {{ sign_up_form.email.label }}
+            {{ sign_up_form.email(class="form-control")}}
+       </fieldset>
+       <fieldset>
+            {{ sign_up_form.password.label }}
+            {{ sign_up_form.password(class="form-control")}}
+       </fieldset>
+       <fieldset>
+            {{ sign_up_form.confirm_pass.label }}
+            {{ sign_up_form.confirm_pass(class="form-control")}}
+       </fieldset>
+       {{sign_up_form.submit(class="btn btn-primary")}}
+   </div>
+   </form>
+</div>
+{% endblock content %}

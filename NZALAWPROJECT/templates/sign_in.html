@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+
+
+<div class="container">
+
+<h1>Login</h1>
+</div class="form-group">
+    <form action="" method="POST">
+        <fieldset>
+            {{sign_in_form.email.label}}
+            {{sign_in_form.email(class="form-control")}}
+        </fieldset>
+        <fieldset>
+            {{sign_in_form.password.label}}
+            {{sign_in_form.password(class="form-control")}}
+        </fieldset>
+        {{sign_in_form.submit(class='btn btn-primary')}}
+   </form>
+</div>
+</div>
+{% endblock content %}

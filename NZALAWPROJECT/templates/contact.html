@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="form-group">
+        <form action="" method="POST">
+            <fieldset>
+                {{ contact_form.name.label }}
+                {{ contact_form.name(class="form-control")}}
+            </fieldset>
+            <fieldset>
+                {{ contact_form.email.label }}
+                {{ contact_form.email(class="form-control")}}
+            </fieldset>
+            <fieldset>
+                {{ contact_form.phone.label }}
+                {{ contact_form.phone(class="form-control")}}
+            </fieldset>
+            <fieldset>
+                {{ contact_form.message.label }}
+                {{ contact_form.message(class="form-control")}}
+            </fieldset>
+            {{ contact_form.submit(class="btn btn-primary")}}
+        </form>
+    </div> 
+</div>
+
+{% endblock content %}

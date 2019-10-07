@@ -1,0 +1,104 @@
+<!--Alex Code-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Bootstrap link-->
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+  <!--main css link-->
+  <link rel="stylesheet" href="../static/css/main.css">
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <title>website structure</title>
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="row d-flex justify-content-left">
+        <div class="col-lg-5 head__1">
+          <img src="http://sindilimpba.org.br/wp-content/uploads/2015/04/125x125.gif" alt="avatar" class="Avatar__picture">
+          <div class="blok__init"><h1>Nelsen, Zehe & Antas, PC</h1></div>
+        </div>
+      </div>
+    </div>
+    <div class="container nav__bar">
+      <div class="row d-flex justify-content-space-beetwen">
+        <div class="col-lg-1 mr-auto navigation__bar"><a href="what_we_do.html">what we do</a></div>
+        <div class="col-lg-1 mr-auto navigation__bar active"><a href="index.html">news and events</a></div>
+        <div class="col-lg-1 mr-auto navigation__bar"><a href="who_we_are.html">who we are</a></div>
+        <div class="col-lg-1 mr-auto navigation__bar"><a href="#">where we work</a></div>
+        <div class="col-lg-1 mr-auto navigation__bar"><a href="{{ url_for('contact') }}">Contact</a></div>
+        <div class="col-lg-1 mr-auto navigation__bar"><a href="{{ url_for('sign_in') }}">Sign In</a></div>
+        <div class="col-lg-1 mr-auto navigation__bar"><a href="{{ url_for('sign_up') }}">Sign Up</a></div>
+      </div>
+    </div>
+  </header>
+
+<section>
+  <div class="container">
+      <div class="row d-flex justify-content-center main__container">
+        <div class="col-lg-8 data__container">
+<!--all data for left container should go here-->
+        <img src="https://placehold.it/650x450" alt="650x450">
+        <h3>Welcome to our website</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore
+           magna aliqua. Ut enim ad minim veniam, quis nostrud
+           exercitation ullamco laboris nisi ut aliquip ex ea
+           commodo consequat. Duis aute irure dolor in reprehenderit
+           in voluptate velit esse cillum dolore eu fugiat nulla
+           pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+        </div>
+
+        <div class="col-lg-4 news__container">
+<!--all data for right container should go here-->
+<div class="news">
+<h3>NEWS FEED</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur
+  adipisicing elit, sed do eiusmod tempor incididunt ut labore
+  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   consequat. Duis aute irure dolor in reprehenderit in voluptate
+    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui
+    officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+ eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+   nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+   in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+   cupidatat non proident, sunt in culpa qui officia deserunt
+   mollit anim id est laborum.</p></div>
+<address class="address">
+  Nelsen, Zehe & Antas, PC <br>
+  55 West Monroe Street, Suit 1800<br>
+  Chicago IL 60603<br>
+  312-332-9900 phone<br>
+  312-322-9977 fax<br>
+  <a href="mailto:ENielsen@nzlaw.com?subject=feedback">ENielsen@nzlaw.com</a>
+
+
+</address>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="col-lg-12 footer__container">
+      <h6>HOME - WHO WE ARE - WHAT WE DO - NEWS & EVENTS -WHERE WE WORK -CONTACT</h6>
+<p>© 2009 Nelson, Zehe & Antas. PC.// Website Design by OneTen Creative</p>
+    </div>
+  </div>
+</footer>
+{% block content %}
+{% endblock content %}
+</body>
+</html>
+<!--Alex code-->
